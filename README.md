@@ -1,5 +1,7 @@
 ## Patch-HD4000 Monterey 
 
+### Update 20 June 2021 release V2
+
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
@@ -11,7 +13,7 @@
 - -v keepsyms=1 -lilubetaall alcid=12 amfi_get_out_of_my_way=1 -no_compat_check
 - PlatformInfo ➤ MacBookPro12,1
 
-### Download V1 ➤ [Patch-HD4000.zip](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V1)
+### Download V2 ➤ [Patch-HD4000.zip](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V2)
 
 - View full Video ⬇︎
 
