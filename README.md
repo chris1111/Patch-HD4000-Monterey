@@ -4,7 +4,8 @@
 
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
 
-- To using this program SIP security (Fully disable) and Gatekeeper must be disable
+- To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
+- Gatekeeper must be disable
 
 - OpenCore config setup: NVRAM ➤ Add ➤ boot-args
 - -v keepsyms=1 -lilubetaall alcid=12 amfi_get_out_of_my_way=1 -no_compat_check
