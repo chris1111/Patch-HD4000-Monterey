@@ -7,7 +7,7 @@
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
 ### Credit: EduCovas for AppleIntelGraphicsShared.bundle and restart fix
 ### Credit: Dhinak for using beta 6 Metal binaries
-### Credit: for fixing google fonts (WebKit)
+### Credit: khronokernel for fixing google fonts (WebKit)
 - Warning: this package replaces system files and could render your system unbootable.
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
 - Gatekeeper must be disable
