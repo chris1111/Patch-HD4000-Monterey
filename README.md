@@ -5,7 +5,7 @@
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
-
+- Warning: this package replaces system files and could render your system unbootable.
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
 - Gatekeeper must be disable
 
