@@ -4,7 +4,7 @@
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
-### Credit: chris1111 for build the app and found using binaries from Big Sur 11.4
+### Credit: chris1111 for build the app
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
 ### Credit: [educovas](https://github.com/educovas) for found AppleIntelGraphicsShared.bundle and restart fix
 ### Credit: [Dhinak](https://github.com/DhinakG) for found using beta 6 Metal binaries
