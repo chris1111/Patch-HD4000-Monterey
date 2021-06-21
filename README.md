@@ -5,9 +5,9 @@
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
-### Credit: EduCovas for AppleIntelGraphicsShared.bundle and restart fix
-### Credit: Dhinak for using beta 6 Metal binaries
-### Credit: khronokernel for fixing google fonts (WebKit)
+### Credit: EduCovas for found AppleIntelGraphicsShared.bundle and restart fix
+### Credit: Dhinak for found using beta 6 Metal binaries
+### Credit: khronokernel for found the fixing google fonts (WebKit)
 - Warning: this package replaces system files and could render your system unbootable.
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
 - Gatekeeper must be disable
