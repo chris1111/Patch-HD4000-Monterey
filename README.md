@@ -3,7 +3,8 @@
 ### Update 21 June 2021 release V2
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
-
+- use this program on Monterey 12 system Only!
+- 
 ### Credit: chris1111 for build the app
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
 ### Credit: [educovas](https://github.com/educovas) for found AppleIntelGraphicsShared.bundle and restart fix
