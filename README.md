@@ -16,7 +16,7 @@
 - Gatekeeper must be disable
 
 - OpenCore config setup: NVRAM ➤ Add ➤ boot-args ⬇︎
-- -v keepsyms=1 -lilubetaall alcid=12 amfi_get_out_of_my_way=1 -no_compat_check
+- -v keepsyms=1 -lilubetaall amfi_get_out_of_my_way=1 -no_compat_check
 - PlatformInfo ➤ MacBookPro12,1
 
 ### Download V2 ➤ [Patch-HD4000.zip](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V2)
