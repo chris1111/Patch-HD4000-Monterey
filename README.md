@@ -29,6 +29,9 @@
 
 ## Workaround: fix Runtime script Error, to reset full disk access privileges.
 - Terminal command: ➤  tccutil reset SystemPolicyAllFiles
+
+![Untitled](https://user-images.githubusercontent.com/6248794/123511992-d7bbbf00-d652-11eb-82c1-e9aae4c1873e.png)
+
 - Reboot macOS then retry the program
 
 
