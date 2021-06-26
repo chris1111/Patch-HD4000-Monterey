@@ -27,7 +27,7 @@
 
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/118173318-6a820080-b3fb-11eb-9ba5-203165fb6f26.png)](https://youtu.be/JnMh_icnYpw)
 
-## Wokaround: fix Runtime script Error, to reset full disk access privileges.
+## Workaround: fix Runtime script Error, to reset full disk access privileges.
 - Terminal command: ➤  tccutil reset SystemPolicyAllFiles
 - Reboot macOS then retry the program
 
