@@ -7,9 +7,9 @@
 
 ### Credit: chris1111 for build the app
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
-### Credit: [educovas](https://github.com/educovas) for found AppleIntelGraphicsShared.bundle and restart fix
+### Credit: [educovas](https://github.com/educovas) EduCovas for fixed google fonts
 ### Credit: [Dhinak](https://github.com/DhinakG) for found using beta 6 Metal binaries
-### Credit: [khronokernel](https://github.com/khronokernel) for found the fixing google fonts (WebKit)
+### Credit: [khronokernel](https://github.com/khronokernel) for fixing google fonts (WebKit)
 - use this program on Monterey 12 system Only!
 - Warning: this package replaces system files and could render your system unbootable.
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
@@ -26,6 +26,14 @@
 - View full Video ⬇︎
 
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/118173318-6a820080-b3fb-11eb-9ba5-203165fb6f26.png)](https://youtu.be/JnMh_icnYpw)
+
+##### Workaround: fix Runtime script Error, to reset full disk access privileges.
+- Terminal command: ➤  tccutil reset SystemPolicyAllFiles
+
+![Untitled](https://user-images.githubusercontent.com/6248794/123511992-d7bbbf00-d652-11eb-82c1-e9aae4c1873e.png)
+
+- Reboot macOS then retry the program
+
 
 
  
