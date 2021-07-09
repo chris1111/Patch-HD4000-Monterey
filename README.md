@@ -7,7 +7,7 @@
 
 ### Credit: chris1111 for build the app
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
-### Credit: [educovas](https://github.com/educovas) for found AppleIntelGraphicsShared.bundle and restart fix
+### Credit: [educovas](https://github.com/educovas) EduCovas fixed google fonts
 ### Credit: [Dhinak](https://github.com/DhinakG) for found using beta 6 Metal binaries
 ### Credit: [khronokernel](https://github.com/khronokernel) for found the fixing google fonts (WebKit)
 - use this program on Monterey 12 system Only!
