@@ -1,7 +1,7 @@
 ## Patch-HD4000 Monterey 
 - Update 23 June 2021 Add all Disk number in the list
 
-### Update 09 Juillet 2021 Add AppleGVA.framework, AppleGVACore.framework
+### Update 09 July 2021 Add AppleGVA.framework, AppleGVACore.framework
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
