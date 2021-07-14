@@ -5,7 +5,6 @@ use scripting additions
 --	Properties configuting shell
 --If Continue
 display dialog "Welcome Patch HD 4000 Monterey" with icon note
-
 activate me
 set all to paragraphs of (do shell script "ls /Volumes")
 set w to choose from list all with prompt " 
@@ -41,19 +40,18 @@ try
 			set Check to true
 		end if
 		if Check is true then
-			set progress total steps to 5
-			set progress additional description to "Analyse Progression"
+			set progress total steps to 6
+			set progress additional description to "Progression Analyse"
 			delay 2
 			set progress completed steps to 1
 			
-			set progress additional description to "Analyse Progression"
+			set progress additional description to "Progression Analyse"
 			delay 2
 			set progress completed steps to 2
 			
 			set progress additional description to "Analyse Monterey Disk"
 			delay 2
 			set progress completed steps to 3
-			
 			try
 				do shell script "mount -o nobrowse -t apfs /dev/" & the_ID & " /System/Volumes/Update/mnt1" with administrator privileges
 				do shell script "open /System/Volumes/Update/mnt1/"
@@ -63,7 +61,7 @@ try
 				end tell
 				display dialog "Click Rebuild SnapShot to proceed
 Patch HD 4000 Monterey 12.
-Wait for the end of the process " with icon note buttons {"Rebuild SnapShot"} default button {"Rebuild SnapShot"}
+WAIT. . . " with icon note buttons {"Rebuild SnapShot"} default button {"Rebuild SnapShot"}
 				
 				## Set use_terminal to true to run the script in a terminal
 				set use_terminal to true
@@ -94,6 +92,11 @@ Wait for the end of the process " with icon note buttons {"Rebuild SnapShot"} de
 					do shell script "cp -R /Private/tmp/*.bundle  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions/" with administrator privileges
 					delay 1
 					do shell script "cp -R /Private/tmp/WebKit.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks/" with administrator privileges
+					delay 1
+					do shell script "cp -R /Private/tmp/AppleGVA.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges
+					delay 1
+					do shell script "cp -R /Private/tmp/AppleGVACore.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges
+					
 					delay 2
 					do shell script the_command with administrator privileges
 					delay 1
@@ -101,12 +104,12 @@ Wait for the end of the process " with icon note buttons {"Rebuild SnapShot"} de
 					delay 2
 					set progress completed steps to 4
 					
-					set progress additional description to "Installation Done"
+					set progress additional description to "Installation patch"
 					delay 1
 					set progress completed steps to 5
 					set progress additional description to "
-Intel HD 4000 patching system
-Done. Wait for it to be completed. . ."
+Intel HD 4000 patch system 
+Complete! Wait till it's finished. . ."
 					
 				end if
 				
