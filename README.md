@@ -1,6 +1,7 @@
 ## Patch-HD4000 Monterey 
 
-### Update 14 July 2021 correction english description
+### Update 15 July 2021 fix an issue
+- Update 14 July 2021 correction english description
 - Update 09 July 2021 Add AppleGVA.framework, AppleGVACore.framework
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
