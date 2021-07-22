@@ -1,0 +1,9 @@
+#!/bin/bash
+# Version "1.1" Patch HD 4000 chris1111# Base on jackluke work
+# Vars
+apptitle="Patch-HD4000"
+version="1.0"
+# Set Icon directory and file 
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/AppIcon.icns"
+./Patch-Helper
