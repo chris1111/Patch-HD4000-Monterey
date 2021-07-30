@@ -7,6 +7,9 @@
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
+- For real Mac I recommand to using the khronokernel OCLP ➤ [khronokernel OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher/)
+
+
 ### Credit: chris1111 for build the app
 ### Credit: Base on [Jacklude](https://github.com/jacklukem) work
 ### Credit: [educovas](https://github.com/educovas) EduCovas for fixed google fonts
