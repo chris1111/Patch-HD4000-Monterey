@@ -12,7 +12,7 @@
 
 ### Credit: 
 - chris1111 for build the app
-- Base on [Jacklude](https://github.com/jacklukem) work
+- Base on [Jackluke](https://github.com/jacklukem) work
 - [educovas](https://github.com/educovas) for fixed google fonts
 - [Dhinak](https://github.com/DhinakG) for found using beta 6 Metal binaries
 - [khronokernel](https://github.com/khronokernel) for fixing google fonts (WebKit)
