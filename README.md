@@ -28,6 +28,9 @@
 
 - PlatformInfo ➤ MacBookPro12,1
 
+#### Troubleshooting Error -1713
+- Reboot macOS then restart the program
+
 ### Download V3 ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V3 )
 
 - View full Video ⬇︎
@@ -35,7 +38,6 @@
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/118173318-6a820080-b3fb-11eb-9ba5-203165fb6f26.png)](https://youtu.be/aMoenFAdKxc)
 
 ### Video Fonction SIP Check ⬇︎
-
 
 https://user-images.githubusercontent.com/6248794/127409575-bc51551d-ece6-4415-a04b-dcc757eebaa1.mov
 
