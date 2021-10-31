@@ -1,6 +1,7 @@
 ## Patch-HD4000 Monterey for Hackintosh
 
-### Latest Update 28 July 2021 Add fonction SIP Check
+### Latest Update 31 Oct 2021 Update binaries files
+- Update 28 July 2021 Add fonction SIP Check
 - Update 22 July 2021 use only shell scrip on the app
 - Update 14 July 2021 correction english description
 - Update 09 July 2021 Add AppleGVA.framework, AppleGVACore.framework
