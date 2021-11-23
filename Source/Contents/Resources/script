@@ -1,6 +1,5 @@
 #!/bin/bash
-# Version "1.1" Patch HD4000 Monterey chris1111
-# Base on jackluke work
+# Version "1.1" Patch HD4000 Monterey chris1111# Base on jackluke work
 # Vars
 apptitle="Patch HD4000 Monterey"
 version="1.0"
@@ -61,121 +60,24 @@ cp -R ./AppleGVACore.framework /Private/tmp
 Sleep 1
 cp -R ./WebKit.framework /Private/tmp
 Sleep 1
+cp -R ./OpenCL.framework /Private/tmp
+Sleep 1
 echo "Install binary files Done"
 
 
 osascript <<EOD
- display dialog "Welcome Patch HD4000 Monterey" with icon 2
-activate me
-set all to paragraphs of (do shell script "ls /Volumes")
-set w to choose from list all with prompt " 
+ display dialog "Welcome Patch HD4000 Monterey" with icon 2activate meset all to paragraphs of (do shell script "ls /Volumes")set w to choose from list all with prompt " 
 To continue, select the volume Monterey 12 you want to use, then press the OK button
-The volume will be renamed Monterey-DISK" OK button name "OK" with multiple selections allowed
-if w is false then
-	display dialog "Quit Installer " with icon 0 buttons {"EXIT"} default button {"EXIT"}
-	return
-end if
-try
-	
-	repeat with teil in w
-		do shell script "diskutil `diskutil list | awk '/ " & teil & "  / {print $NF}'`"
-	end repeat
-end try
-set theName to "Monterey-DISK"
-tell application "Finder"
-	set name of disk w to theName
-end tell
---If Continue
-display dialog "Select  the APFS Monterey-DISK on the list to mount the drive as RW" with icon 2
-set alldisks to paragraphs of (do shell script "diskutil list")
-set nonbootnumber to (count of alldisks)
-try
-	set alldisks to items 2 thru nonbootnumber of alldisks
-	activate
-	set your_selected_device_id to (choose from list alldisks with prompt "Choose APFS Monterey-DISK, then click OK to proceed")
-	repeat with the_Item in your_selected_device_id
-		set the_ID to (do shell script "diskutil list | grep -m 1" & space & quoted form of the_Item & space & "| grep -o 'disk[0-9][a-z][0-9]*'")
-		set Check to false
-		set tName to your_selected_device_id as text
-		if (tName contains "10:" or tName contains "9:" or tName contains "8:" or tName contains "7:" or tName contains "6:" or tName contains "5:" or tName contains "4:" or tName contains "3:" or tName contains "2:" or tName contains "1:" or tName contains "0:") and tName contains "APFS" and (tName does not contain "VM" and tName does not contain "- D" and tName does not contain "Update" and tName does not contain "Preboot" and tName does not contain "Recovery" and tName does not contain "Container" and tName does not contain "Snapshot") then
-			set Check to true
-		end if
-		if Check is true then
-			set progress total steps to 6
-			set progress additional description to "Progression Analyse"
-			delay 2
-			set progress completed steps to 1
-			
-			set progress additional description to "Progression Analyse"
-			delay 2
-			set progress completed steps to 2
-			
-			set progress additional description to "Analyse Monterey Disk"
-			delay 2
-			set progress completed steps to 3
-			try
-				do shell script "mount -o nobrowse -t apfs /dev/" & the_ID & " /System/Volumes/Update/mnt1" with administrator privileges
-				do shell script "open /System/Volumes/Update/mnt1/"
-				delay 1
-				tell application "PatchHD4000"
-					activate
-				end tell
-				display dialog "Click Rebuild SnapShot to proceed
+The volume will be renamed Monterey-DISK" OK button name "OK" with multiple selections allowedif w is false then	display dialog "Quit Installer " with icon 0 buttons {"EXIT"} default button {"EXIT"}	returnend iftry		repeat with teil in w		do shell script "diskutil `diskutil list | awk '/ " & teil & "  / {print $NF}'`"	end repeatend tryset theName to "Monterey-DISK"tell application "Finder"	set name of disk w to theNameend tell--If Continuedisplay dialog "Select  the APFS Monterey-DISK on the list to mount the drive as RW" with icon 2set alldisks to paragraphs of (do shell script "diskutil list")set nonbootnumber to (count of alldisks)try	set alldisks to items 2 thru nonbootnumber of alldisks	activate	set your_selected_device_id to (choose from list alldisks with prompt "Choose APFS Monterey-DISK, then click OK to proceed")	repeat with the_Item in your_selected_device_id		set the_ID to (do shell script "diskutil list | grep -m 1" & space & quoted form of the_Item & space & "| grep -o 'disk[0-9][a-z][0-9]*'")		set Check to false		set tName to your_selected_device_id as text		if (tName contains "10:" or tName contains "9:" or tName contains "8:" or tName contains "7:" or tName contains "6:" or tName contains "5:" or tName contains "4:" or tName contains "3:" or tName contains "2:" or tName contains "1:" or tName contains "0:") and tName contains "APFS" and (tName does not contain "VM" and tName does not contain "- D" and tName does not contain "Update" and tName does not contain "Preboot" and tName does not contain "Recovery" and tName does not contain "Container" and tName does not contain "Snapshot") then			set Check to true		end if		if Check is true then			set progress total steps to 6			set progress additional description to "Progression Analyse"			delay 2			set progress completed steps to 1						set progress additional description to "Progression Analyse"			delay 2			set progress completed steps to 2						set progress additional description to "Analyse Monterey Disk"			delay 2			set progress completed steps to 3			try				do shell script "mount -o nobrowse -t apfs /dev/" & the_ID & " /System/Volumes/Update/mnt1" with administrator privileges				do shell script "open /System/Volumes/Update/mnt1/"				delay 1				tell application "PatchHD4000"					activate				end tell				display dialog "Click Rebuild SnapShot to proceed
 Patch HD4000 Monterey 12.
-WAIT. . . " with icon 2 buttons {"Rebuild SnapShot"} default button {"Rebuild SnapShot"}
-				do shell script "cp -R /Private/tmp/*.kext  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions/" with administrator privileges
-				delay 1
-				do shell script "cp -R /Private/tmp/*.bundle  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions/" with administrator privileges
-				delay 1
-				do shell script "cp -R /Private/tmp/WebKit.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks/" with administrator privileges
-				delay 1
-				do shell script "cp -R /Private/tmp/AppleGVA.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges
-				delay 1
-				do shell script "cp -R /Private/tmp/AppleGVACore.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges
-				delay 1
-				do shell script "chown -R root:wheel /System/Volumes/Update/mnt1/System/Library/Extensions" with administrator privileges
-				do shell script "chmod -R 755 /System/Volumes/Update/mnt1/System/Library/Extensions" with administrator privileges
-				do shell script "kmutil install --volume-root /System/Volumes/Update/mnt1/ --update-all" with administrator privileges
-				do shell script "bless --folder /System/Volumes/Update/mnt1/System/Library/CoreServices --bootefi --create-snapshot" with administrator privileges
-				
-				set progress additional description to "Install Patch"
-				delay 2
-				set progress completed steps to 4
-				
-				set progress additional description to "Installation patch"
-				delay 1
-				set progress completed steps to 5
-				set progress additional description to "
+WAIT. . . " with icon 2 buttons {"Rebuild SnapShot"} default button {"Rebuild SnapShot"}				tell application "PatchHD4000"					activate				end tell				do shell script "cp -R /Private/tmp/*.kext  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions/" with administrator privileges				delay 1				do shell script "cp -R /Private/tmp/*.bundle  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions/" with administrator privileges				delay 1				do shell script "cp -R /Private/tmp/WebKit.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks/" with administrator privileges				delay 1				do shell script "cp -R /Private/tmp/OpenCL.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks/" with administrator privileges				delay 1				do shell script "cp -R /Private/tmp/AppleGVA.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges				delay 1				do shell script "cp -R /Private/tmp/AppleGVACore.framework  /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks/" with administrator privileges				delay 1				do shell script "chown -R root:wheel /System/Volumes/Update/mnt1/System/Library/Extensions" with administrator privileges				do shell script "chmod -R 755 /System/Volumes/Update/mnt1/System/Library/Extensions" with administrator privileges				do shell script "kmutil install --volume-root /System/Volumes/Update/mnt1/ --update-all" with administrator privileges				do shell script "bless --folder /System/Volumes/Update/mnt1/System/Library/CoreServices --bootefi --create-snapshot" with administrator privileges								set progress additional description to "Install Patch"				delay 2				set progress completed steps to 4								set progress additional description to "Installation patch"				delay 1				set progress completed steps to 5				set progress additional description to "
 HD4000 patch system 
-Complete! Wait till it's finished. . ."
-				
-				
-			on error the error_message number the error_number
-				display dialog "Error: " & the error_number & ". " & the error_message buttons {"OK"} default button 1
-				quit
-			end try
-			do shell script "diskutil unmount /System/Volumes/Update/mnt1"
-			tell application "PatchHD4000"
-				activate
-			end tell
-			display dialog "Install Patch HD4000 /Volume Snapshot
-Monterey-DISK has been modified! Reboot" buttons {"Reboot macOS"} default button 1 with icon 2 giving up after 10
-		else
-			display dialog "You haven't selected any Monterey-DISK" buttons {"Exit"} with icon 0 giving up after 5
-		end if
-		
-	end repeat
-on error the error_message number the error_number
-	if the error_number is -128 or the error_number is -1708 then
-	else
-		display dialog "There are no selected Monterey-DISK snapshots." buttons {"OK"} default button 1 with icon 0 giving up after 5
-	end if
-end try
+Complete! Wait till it's finished. . ."											on error the error_message number the error_number				display dialog "Error: " & the error_number & ". " & the error_message buttons {"OK"} default button 1				quit			end try			do shell script "diskutil unmount /System/Volumes/Update/mnt1"			tell application "PatchHD4000"				activate			end tell			display dialog "Install Patch HD4000 /Volume Snapshot
+Monterey-DISK has been modified! Reboot" buttons {"Reboot macOS"} default button 1 with icon 2 giving up after 10		else			display dialog "You haven't selected any Monterey-DISK" buttons {"Exit"} with icon 0 giving up after 5		end if			end repeaton error the error_message number the error_number	if the error_number is -128 or the error_number is -1708 then	else		display dialog "There are no selected Monterey-DISK snapshots." buttons {"OK"} default button 1 with icon 0 giving up after 5	end ifend try
 
 EOD
 
-echo "
-HD4000 patch system 
+echo "HD4000 patch system 
 Complete Done!"
 
 
