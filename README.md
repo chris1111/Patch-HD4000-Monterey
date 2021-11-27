@@ -1,12 +1,18 @@
 ## Patch-HD4000 Monterey for Hackintosh
 
 ### Latest Update 22 Nov 2021 add OpenCL.framework
+
+## List Update: ⬇︎
+<details> 
+  <summary>View list Update</summary>
+
 - Update 31 Oct 2021 OpenSource script
 - Update 31 Oct 2021 Update binaries files
 - Update 28 July 2021 Add fonction SIP Check
 - Update 22 July 2021 use only shell scrip on the app
-- Update 14 July 2021 correction english description
-- Update 09 July 2021 Add AppleGVA.framework, AppleGVACore.framework
+
+</details>
+
 
 ### Simple macOS app for patching Intel HD 4000 on macOS Monterey 12
 
