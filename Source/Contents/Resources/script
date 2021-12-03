@@ -6,6 +6,9 @@ version="1.0"
 # Set Icon directory and file 
 export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"
+echo "Starting patch HD 4000"
+Sleep 2
+
 echo "Verification SIP"
 Sleep 2
 function vertifySIP {
