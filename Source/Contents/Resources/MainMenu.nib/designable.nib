@@ -543,12 +543,12 @@ Gw
                 <rect key="frame" x="0.0" y="0.0" width="580" height="420"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="220">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" mirrorLayoutDirectionWhenInternationalizing="never" translatesAutoresizingMaskIntoConstraints="NO" id="220">
                         <rect key="frame" x="488" y="7" width="86" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="476">
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="AppIconOff" imagePosition="only" alignment="center" inset="2" id="476">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemThin" size="1"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
@@ -562,18 +562,18 @@ Gw
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </progressIndicator>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="226">
-                        <rect key="frame" x="10" y="45" width="561" height="339"/>
+                        <rect key="frame" x="20" y="47" width="540" height="337"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Hk1-72-Owa">
-                            <rect key="frame" x="1" y="1" width="559" height="337"/>
+                            <rect key="frame" x="1" y="1" width="538" height="335"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsDocumentBackgroundColorChange="YES" linkDetection="YES" id="225">
-                                    <rect key="frame" x="0.0" y="0.0" width="559" height="337"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="538" height="335"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="559" height="337"/>
+                                    <size key="minSize" width="538" height="335"/>
                                     <size key="maxSize" width="561" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
@@ -592,7 +592,7 @@ Gw
                         </scroller>
                     </scrollView>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="r7t-BJ-U1y">
-                        <rect key="frame" x="10" y="45" width="561" height="339"/>
+                        <rect key="frame" x="20" y="47" width="540" height="337"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="Qy2-s0-RSz"/>
                     </imageView>
@@ -610,7 +610,7 @@ Gw
             <connections>
                 <outlet property="delegate" destination="207" id="376"/>
             </connections>
-            <point key="canvasLocation" x="721" y="-366"/>
+            <point key="canvasLocation" x="798" y="-393"/>
         </window>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="WebViewWindow" animationBehavior="default" id="247" userLabel="WebOutputWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -744,5 +744,6 @@ Gw
     </objects>
     <resources>
         <image name="AppIcon" width="128" height="128"/>
+        <image name="AppIconOff" width="128" height="128"/>
     </resources>
 </document>
