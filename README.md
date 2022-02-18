@@ -1,4 +1,5 @@
 ## Patch-HD4000 Monterey for Hackintosh
+- Working for real Mac having a single GPU
 
 ### Latest Update 17 Fev 2022 Fix issue error 1713
 
