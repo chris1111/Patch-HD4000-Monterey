@@ -50,7 +50,10 @@ exit 0
 vertifySIP
 
 Sleep 1
-
-Open ./PatchHD4000.app
+cp -Rp ./"PatchHD4000.zip" /Private/tmp
+Sleep 1
+ditto -x -k --sequesterRsrc --rsrc /Private/tmp/"PatchHD4000.zip" /Private/tmp
+Sleep 1
+Open /Private/tmp/"Patch HD 4000.app"
 echo "QUITAPP"
 
