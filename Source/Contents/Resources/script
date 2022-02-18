@@ -2,7 +2,7 @@
 # Version "1.1" Patch HD4000 Monterey chris1111# Base on jackluke work
 # Vars
 apptitle="Patch HD4000 Monterey"
-version="1.0"
+version="1.1"
 # Set Icon directory and file 
 export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"
