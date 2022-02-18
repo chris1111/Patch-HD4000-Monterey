@@ -1,7 +1,7 @@
 ## Patch-HD4000 Monterey for Hackintosh
 
 
-### Latest Update 17 Fev 2022 Fix issue error 1713
+### Latest Update 18 Fev 2022 Fix issue error 1713
 
 ## List Update: ⬇︎
 <details> 
