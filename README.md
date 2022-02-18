@@ -43,7 +43,7 @@
 #### Troubleshooting Error -1713
 - Reboot macOS then restart the program
 
-### Download V3 ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V3 )
+### Download V4 ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V4)
 
 - View full Video ⬇︎
 
