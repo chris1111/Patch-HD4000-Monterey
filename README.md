@@ -1,12 +1,12 @@
 ## Patch-HD4000 Monterey for Hackintosh
 
-### Latest Update 07 Dec 2021 Change Quit button
-
+### Latest Update 17 Fev 2022 Fix issue error 1713
 
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
 
+- Update 07 Dec 2021 Change Quit button
 - Update 03 Dec 2021 Add Image View for the Applications
 - Update 22 Nov 2021 add OpenCL.framework
 - Update 31 Oct 2021 OpenSource script
