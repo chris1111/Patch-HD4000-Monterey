@@ -1,6 +1,7 @@
 #!/bin/bash
 # By chris1111
-# Version "1.0" Geforce Kepler patcher# Base on jackluke work
+# Version "1.0" Patch HD 4000
+# Base on jackluke work
 PARENTDIR=$(dirname "$0")
 cd "$PARENTDIR"
 
@@ -8,7 +9,17 @@ sudo cp -R ./*.kext /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Lib
 Sleep 1
 sudo cp -R ./*.bundle /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions
 Sleep 1
-sudo cp -R /Private/tmp/*.kext /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/ExtensionsSleep 1sudo cp -R ./*.bundle /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/ExtensionsSleep 1sudo cp -R ./WebKit.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/FrameworksSleep 1sudo cp -R ./OpenCL.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/FrameworksSleep 1sudo cp -R ./AppleGVA.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworksSleep 1sudo cp -R ./AppleGVACore.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks
+sudo cp -R /Private/tmp/*.kext /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions
+Sleep 1
+sudo cp -R ./*.bundle /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Extensions
+Sleep 1
+sudo cp -R ./WebKit.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks
+Sleep 1
+sudo cp -R ./OpenCL.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/Frameworks
+Sleep 1
+sudo cp -R ./AppleGVA.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks
+Sleep 1
+sudo cp -R ./AppleGVACore.framework /Volumes/Monterey-DISK/System/Volumes/Update/mnt1/System/Library/PrivateFrameworks
 
 
 echo "Kext Cache repair! Please wait. ."
