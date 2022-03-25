@@ -36,7 +36,7 @@
 - Gatekeeper must be disable
 
 - OpenCore config setup: NVRAM ➤ Add ➤ boot-args ⬇︎
-- -v keepsyms=1 -lilubetaall amfi_get_out_of_my_way=1 -no_compat_check
+- -v keepsyms=1
 - csr-active-config ☞ EF0F0000 
 
 - PlatformInfo ➤ MacBookPro12,1
