@@ -44,7 +44,7 @@
 
 - PlatformInfo ➤ MacBookPro12,1
 --------------------------------------------------------------
-
+###  SIP Enable ⬇︎
 ###  OpenCore config setup csrutil status enable csrutil authenticated-root disable : 
 - NVRAM ➤ Add ➤ boot-args ⬇︎
 - -v keepsyms=1
@@ -57,6 +57,9 @@
 #### Troubleshooting Error -1713
 - Reboot macOS then restart the program
 
+#### IMPORTANT NOTE: The change of NVRAM value requires a Reset NVRAM from OpenCore
+
+
 ### Download V4 ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V4)
 
 - View full Video ⬇︎
@@ -66,6 +69,9 @@
 ### Video Fonction SIP Check ⬇︎
 
 https://user-images.githubusercontent.com/6248794/127409575-bc51551d-ece6-4415-a04b-dcc757eebaa1.mov
+
+
+
 
 
 
