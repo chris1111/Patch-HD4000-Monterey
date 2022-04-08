@@ -39,6 +39,11 @@
 - -v keepsyms=1
 - csr-active-config ☞ EF0F0000 
 
+- OpenCore config setup csrutil status enable csrutil authenticated-root disable : NVRAM ➤ Add ➤ boot-args ⬇︎
+- -v keepsyms=1
+- csr-active-config ☞ 00080000 
+
+
 - PlatformInfo ➤ MacBookPro12,1
 
 #### Troubleshooting Error -1713
