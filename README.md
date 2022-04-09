@@ -52,7 +52,7 @@
 - `csr-active-config` ➤ 00080000 
 - `SecureBootModel`  ➤ Disabled
 - `PlatformInfo` ➤ MacBookPro12,1
-- IMPORTANT NOTE: This csr-active-config  value cannot be used to install the program, if you want to use it you will have to change it after installation with ➤  `EF0F0000`
+- IMPORTANT NOTE: This csrutil authenticated-root disable value cannot be used to install the program, if you want to use it you will have to change it after installation with ➤  `EF0F0000`
 --------------------------------------------------------------
 
 
