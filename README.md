@@ -35,6 +35,7 @@
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
 - Gatekeeper must be disable
 
+###  SIP fully Disable ⬇︎
 - [x] `OpenCore config setup:` csrutil authenticated-root disable : 
 - NVRAM ➤ Add ➤ boot-args `-v keepsyms=1`
 - `csr-active-config` ➤ EF0F0000
