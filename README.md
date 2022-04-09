@@ -35,7 +35,7 @@
 - To using this program SIP security (Fully disable) csrutil disable csrutil authenticated-root disable 
 - Gatekeeper must be disable
 
-### OpenCore config setup: csrutil authenticated-root disable : 
+- [x] `OpenCore config setup:` csrutil authenticated-root disable : 
 - NVRAM ➤ Add ➤ boot-args ⬇︎
 - `-v keepsyms=1`
 - `csr-active-config` ➤ EF0F0000
@@ -43,8 +43,8 @@
 - `PlatformInfo` ➤ MacBookPro12,1
 
 --------------------------------------------------------------
-###  SIP Enable ⬇︎
-###  OpenCore config setup: csrutil enable + csrutil authenticated-root disable : 
+###  SIP Enable ⬇︎ 
+- [x] `OpenCore config setup:` csrutil enable + csrutil authenticated-root disable :
 - NVRAM ➤ Add ➤ boot-args ⬇︎
 - -v keepsyms=1
 - `csr-active-config` ➤ 00080000 
