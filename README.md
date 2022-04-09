@@ -41,7 +41,10 @@
 - `csr-active-config` ➤ EF0F0000
 - `SecureBootModel`  ➤ Disabled
 - `PlatformInfo` ➤ MacBookPro12,1
-
+--------------------------------------------------------------
+- [x] `Clover config setup:` csrutil authenticated-root disable :
+- `csr-active-config` ➤ 0xFEF
+- `PlatformInfo` ➤ MacBookPro12,1
 --------------------------------------------------------------
 ###  SIP Enable ⬇︎ 
 - [x] `OpenCore config setup:` csrutil enable + csrutil authenticated-root disable :
