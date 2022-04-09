@@ -37,22 +37,20 @@
 
 ### OpenCore config setup csrutil disable csrutil authenticated-root disable : 
 - NVRAM ➤ Add ➤ boot-args ⬇︎
-- -v keepsyms=1
-- csr-active-config ➤ EF0F0000 
-- SecureBootModel ➤ Disabled
+- `-v keepsyms=1`
+- `csr-active-config` ➤ EF0F0000
+- `SecureBootModel`  ➤ Disabled
+- `PlatformInfo` ➤ MacBookPro12,1
 
-
-- PlatformInfo ➤ MacBookPro12,1
 --------------------------------------------------------------
 ###  SIP Enable ⬇︎
 ###  OpenCore config setup csrutil status enable csrutil authenticated-root disable : 
 - NVRAM ➤ Add ➤ boot-args ⬇︎
 - -v keepsyms=1
-- csr-active-config ➤ 00080000 
-- SecureBootModel ➤ Disabled
+- `csr-active-config` ➤ 00080000 
+- `SecureBootModel`  ➤ Disabled
+- `PlatformInfo` ➤ MacBookPro12,1
 
-
-- PlatformInfo ➤ MacBookPro12,1
 
 #### Troubleshooting Error -1713
 - Reboot macOS then restart the program
