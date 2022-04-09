@@ -36,7 +36,7 @@
 - Gatekeeper must be disable
 
 - [x] `OpenCore config setup:` csrutil authenticated-root disable : 
-- NVRAM ➤ Add ➤ boot-args -v keepsyms=1`
+- NVRAM ➤ Add ➤ boot-args `-v keepsyms=1`
 - `csr-active-config` ➤ EF0F0000
 - `SecureBootModel`  ➤ Disabled
 - `PlatformInfo` ➤ MacBookPro12,1
@@ -44,7 +44,7 @@
 --------------------------------------------------------------
 ###  SIP Enable ⬇︎ 
 - [x] `OpenCore config setup:` csrutil enable + csrutil authenticated-root disable :
-- NVRAM ➤ Add ➤ boot-args -v keepsyms=1`
+- NVRAM ➤ Add ➤ boot-args `-v keepsyms=1`
 - `csr-active-config` ➤ 00080000 
 - `SecureBootModel`  ➤ Disabled
 - `PlatformInfo` ➤ MacBookPro12,1
