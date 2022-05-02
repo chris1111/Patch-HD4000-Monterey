@@ -62,7 +62,7 @@
 #### IMPORTANT NOTE: The change of NVRAM value requires a Reset NVRAM from OpenCore
 
 
-### Download V4 ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V1)
+### Download ➤ [Patch-HD4000](https://github.com/chris1111/Patch-HD4000-Monterey/releases/tag/V1)
 
 - View full Video ⬇︎
 
